@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <!-- Circulo exterior con borde de doble linea -->
+  <circle cx="60" cy="60" r="56" fill="#ffffff" stroke="#2b4c7e" stroke-width="2" />
+  <circle cx="60" cy="60" r="52" fill="#f8fafc" stroke="#2b4c7e" stroke-width="0.8" stroke-dasharray="2 1" />
+  
+  <!-- Texto arqueado superior e inferior -->
+  <path id="archTop" d="M 18,60 A 42,42 0 0,1 102,60" fill="none" />
+  <path id="archBottom" d="M 102,60 A 42,42 0 0,1 18,60" fill="none" />
+  
+  <text font-size="7" font-family="'Arial', sans-serif" font-weight="bold" fill="#1e3a5f" letter-spacing="1">
+    <textPath href="#archTop" startOffset="50%" text-anchor="middle">
+      RED INTEGRADA DE SALUD
+    </textPath>
+  </text>
+  
+  <text font-size="7.5" font-family="'Arial', sans-serif" font-weight="bold" fill="#1e3a5f" letter-spacing="1.5">
+    <textPath href="#archBottom" startOffset="50%" text-anchor="middle">
+      PACASMAYO
+    </textPath>
+  </text>
+
+  <!-- Escudo Central Institucional -->
+  <g transform="translate(36, 34) scale(0.8)">
+    <!-- Escudo base -->
+    <path d="M 30,5 Q 55,5 55,25 Q 55,55 30,68 Q 5,55 5,25 Q 5,5 30,5 Z" fill="#ffffff" stroke="#1e3a5f" stroke-width="2"/>
+    
+    <!-- Particion del escudo -->
+    <path d="M 5,26 L 55,26" stroke="#1e3a5f" stroke-width="1.5"/>
+    <path d="M 30,26 L 30,68" stroke="#1e3a5f" stroke-width="1.5"/>
+    
+    <!-- Sol naciente en campo superior -->
+    <circle cx="30" cy="26" r="10" fill="#f59e0b" opacity="0.9"/>
+    <!-- Rayos del sol -->
+    <path d="M 30,12 L 30,7 M 20,15 L 16,11 M 40,15 L 44,11 M 12,24 L 7,24 M 48,24 L 53,24" stroke="#d97706" stroke-width="1.5"/>
+    
+    <!-- Campo inferior izquierdo: Mar / Puerto de Pacasmayo -->
+    <path d="M 7,42 Q 18,38 29,42 L 29,66 Q 16,56 7,42 Z" fill="#38bdf8" opacity="0.4"/>
+    <path d="M 8,46 Q 18,43 28,47 M 10,52 Q 19,49 27,53" stroke="#0284c7" stroke-width="1.2" fill="none"/>
+    
+    <!-- Campo inferior derecho: Cruz de la Salud -->
+    <path d="M 31,27 L 53,27 Q 53,50 31,66 Z" fill="#fee2e2" opacity="0.6"/>
+    <!-- Cruz Roja Medica -->
+    <rect x="39" y="36" width="6" height="16" fill="#dc2626" rx="1"/>
+    <rect x="34" y="41" width="16" height="6" fill="#dc2626" rx="1"/>
+  </g>
+  
+  <!-- Estrellitas decorativas laterales -->
+  <polygon points="17,59 18.5,56 21,56 19,54 20,51 17,53 14,51 15,54 13,56 15.5,56" fill="#b91c1c"/>
+  <polygon points="103,59 104.5,56 107,56 105,54 106,51 103,53 100,51 101,54 99,56 101.5,56" fill="#b91c1c"/>
+</svg>

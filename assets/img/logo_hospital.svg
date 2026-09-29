@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="100%" height="100%">
+  <!-- Fondo circular azul institucional con degradado -->
+  <defs>
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e3a8a" />
+      <stop offset="100%" stop-color="#172554" />
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fde047" />
+      <stop offset="100%" stop-color="#ca8a04" />
+    </linearGradient>
+  </defs>
+
+  <!-- Circulo exterior -->
+  <circle cx="60" cy="60" r="56" fill="url(#blueGrad)" stroke="#38bdf8" stroke-width="2.5" />
+  <circle cx="60" cy="60" r="51" fill="none" stroke="#60a5fa" stroke-width="0.8" stroke-dasharray="3 1.5" />
+
+  <!-- Texto circular en el anillo superior e inferior -->
+  <path id="hospTop" d="M 16,60 A 44,44 0 0,1 104,60" fill="none" />
+  <path id="hospBottom" d="M 104,60 A 44,44 0 0,1 16,60" fill="none" />
+
+  <text font-size="6.8" font-family="'Arial', sans-serif" font-weight="900" fill="#ffffff" letter-spacing="0.8">
+    <textPath href="#hospTop" startOffset="50%" text-anchor="middle">
+      HOSPITAL DISTRITAL
+    </textPath>
+  </text>
+
+  <text font-size="6.5" font-family="'Arial', sans-serif" font-weight="900" fill="#facc15" letter-spacing="0.8">
+    <textPath href="#hospBottom" startOffset="50%" text-anchor="middle">
+      PACASMAYO
+    </textPath>
+  </text>
+
+  <!-- Centro del logo: Escudo hospitalario con Cruz de Malta y Antorcha de la vida -->
+  <g transform="translate(35, 33) scale(0.82)">
+    <!-- Circulo interior blanco -->
+    <circle cx="30" cy="30" r="27" fill="#ffffff" stroke="#93c5fd" stroke-width="1.5" />
+    
+    <!-- Cruz Hospitalaria Verde/Azul -->
+    <rect x="24" y="10" width="12" height="40" fill="#0284c7" rx="2" />
+    <rect x="10" y="24" width="40" height="12" fill="#0284c7" rx="2" />
+
+    <!-- Cruz interior blanca de contraste -->
+    <rect x="27" y="14" width="6" height="32" fill="#ffffff" rx="1" />
+    <rect x="14" y="27" width="32" height="6" fill="#ffffff" rx="1" />
+
+    <!-- Nucleo con Caduceo / Baston de Esculapio estilizado -->
+    <circle cx="30" cy="30" r="7" fill="#f59e0b" stroke="#ffffff" stroke-width="1.2"/>
+    <path d="M 30,22 L 30,38" stroke="#ffffff" stroke-width="2" stroke-linecap="round"/>
+  </g>
+
+  <!-- Subtitulo pequeño: REGION LA LIBERTAD -->
+  <rect x="30" y="87" width="60" height="11" rx="3" fill="#0284c7" opacity="0.95"/>
+  <text x="60" y="95" font-size="5.2" font-family="'Arial', sans-serif" font-weight="bold" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">
+    REGION LA LIBERTAD
+  </text>
+</svg>
